@@ -1,4 +1,4 @@
-package com.example.listviewproject2
+package com.example.listviewproject2.dataClass
 
 data class User(var name:String,
                 var lastMsg:String,

@@ -2,6 +2,7 @@ package com.example.listviewproject2
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.listviewproject2.dataClass.User
 import com.example.listviewproject2.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -32,6 +33,13 @@ class MainActivity : AppCompatActivity() {
         binding.listView.isClickable = true
 
         binding.listView.adapter = MyAdapter(this,userArrayList)
+
+    binding.listView.setOnItemClickListener { adapterView, view, position,id ->
+
+        val userNme = name[position]
+        val phone = phoneNo[position]
+        val imgeId = imageId[position]
+    }
     }
 
 }
