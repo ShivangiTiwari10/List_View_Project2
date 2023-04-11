@@ -30,6 +30,8 @@ class MainActivity : AppCompatActivity() {
             userArrayList.add(user)
         }
         binding.listView.isClickable = true
+
+        binding.listView.adapter = MyAdapter(this,userArrayList)
     }
 
 }
