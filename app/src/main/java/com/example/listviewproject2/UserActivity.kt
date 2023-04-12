@@ -14,11 +14,14 @@ class UserActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         binding = ActivityUserBinding.inflate(layoutInflater)
-
-        binding.name.text = intent.getStringExtra("name")
-        binding.phone.text = intent.getStringExtra("Phone")
-        binding.profileImage.setImageResource(intent.getIntExtra("Image",R.drawable.floura))
         setContentView(binding.root)
+        val name = intent.getStringExtra("name")
+        val phone = intent.getStringExtra("Phone")
+
+
+        binding.name.text = "Name:$name"
+        binding.phone.text = "Phone:$phone"
+        binding.profileImage.setImageResource(intent.getIntExtra("Image", R.drawable.floura))
 
     }
 }
