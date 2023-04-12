@@ -1,5 +1,6 @@
 package com.example.listviewproject2
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.listviewproject2.dataClass.User
@@ -40,10 +41,11 @@ class MainActivity : AppCompatActivity() {
         val phone = phoneNo[position]
         val imgeId = imageId[position]
 
-//        val i  =Intent(this,::class.java)
-//        i.putExtra("name",userNme)
-//        i.putExtra("Phone",phone)
-//        i.putExtra("Image",imgeId)
+        val i  = Intent(this,UserActivity::class.java)
+        i.putExtra("name",userNme)
+        i.putExtra("Phone",phone)
+        i.putExtra("Image",imgeId)
+        startActivity(i)
     }
     }
 
