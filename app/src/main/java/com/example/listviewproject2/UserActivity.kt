@@ -17,7 +17,7 @@ class UserActivity : AppCompatActivity() {
 
         binding.name.text = intent.getStringExtra("name")
         binding.phone.text = intent.getStringExtra("Phone")
-        binding.profileImage.id = intent.getIntExtra("Image",R.drawable.floura)
+        binding.profileImage.setImageResource(intent.getIntExtra("Image",R.drawable.floura))
         setContentView(binding.root)
 
     }
