@@ -3,6 +3,7 @@ package com.example.listviewproject2
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.example.listviewproject2.dataClass.User
 import com.example.listviewproject2.databinding.ActivityMainBinding
 
@@ -20,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         val lastMsg = arrayOf("Developer","Docter","Parler","Shoap","Teacher")
         val lastMsgTime = arrayOf("5:15","2:5","6","9","8")
         val phoneNo = arrayOf("25836974","159753456","846231479","987654321","9873298354")
-        val imageId = intArrayOf(R.drawable.image4,R.drawable.image4,R.drawable.image4,R.drawable.image4,R.drawable.image4)
+        val imageId = intArrayOf(R.drawable.image1,R.drawable.image2,R.drawable.image4,R.drawable.floura,R.drawable.background)
 
 
         userArrayList = ArrayList()
@@ -40,6 +41,8 @@ class MainActivity : AppCompatActivity() {
         val userNme = name[position]
         val phone = phoneNo[position]
         val imgeId = imageId[position]
+        Log.i("imgeId","$imgeId")
+
 
         val i  = Intent(this,UserActivity::class.java)
         i.putExtra("name",userNme)
