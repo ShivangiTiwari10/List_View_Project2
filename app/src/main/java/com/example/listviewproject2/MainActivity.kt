@@ -39,6 +39,11 @@ class MainActivity : AppCompatActivity() {
         val userNme = name[position]
         val phone = phoneNo[position]
         val imgeId = imageId[position]
+
+//        val i  =Intent(this,::class.java)
+//        i.putExtra("name",userNme)
+//        i.putExtra("Phone",phone)
+//        i.putExtra("Image",imgeId)
     }
     }
 

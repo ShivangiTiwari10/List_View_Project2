@@ -3,4 +3,6 @@
     <string name="saumya_singh">Saumya Singh</string>
     <string name="hey_yeah_i_am_good">Hey yeah I am good</string>
     <string name="_4_45_pm">4:45 PM</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
